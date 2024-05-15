@@ -1,0 +1,238 @@
+/* CSS styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: black; /* Dark mode */
+    color: #fff; /* White text */
+  }
+  
+  header {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .header-title {
+    font-family: 'vintage', serif;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .login-btn {
+    background-color: #644f12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    margin-right: 20px;
+  }
+  
+  nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  .photo-vin {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pour centrer verticalement si nécessaire */
+    position: relative;
+    width: 1470px; /* Largeur de 1400 pixels */
+    height: 400px; /* Hauteur de 400 pixels */
+    overflow: hidden; /* Masquer tout contenu débordant */
+}
+
+.photo-vin img {
+    position: absolute;
+    top: 30%; /* Positionner le haut de l'image au milieu de la section */
+    left: 50%; /* Positionner la gauche de l'image au milieu de la section */
+    transform: translate(-50%, -50%); /* Décaler l'image de moitié de sa taille pour la centrer */
+    height: 400px;
+
+}
+
+
+.filter-section {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .filter-section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+ /* Add this CSS to adjust the dimensions of the filter buttons */
+/* CSS styles */
+
+/* Add this CSS to adjust the dimensions of the filter buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.filter-btn img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.filter-btn {
+    background-color: #5c4a0b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.filter-btn:hover {
+    background-color: #5c4a0b;
+}
+
+.product-section {
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Change from center to space-around */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Adjusted width calculation */
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5c4a0b;
+    overflow: hidden;
+}
+
+.product img {
+    filter: sepia(30%);
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Rock Salt', cursive;
+}
+
+.product p {
+    color: #666;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Rock Salt', cursive;
+}
+
+.add-to-cart:hover {
+    animation: buttonHover 0.5s ease-in-out;
+}
+
+@keyframes buttonHover {
+    from { background-color: #4CAF50; }
+    to { background-color: #388E3C; }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
